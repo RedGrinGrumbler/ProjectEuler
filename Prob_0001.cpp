@@ -32,13 +32,9 @@ int sumUp(int ceiling, int diff, int diff2, int currIter = 0, int sum = 0){
     currIter += diff;
     sum = sum + currIter;
 
-// - - - - - - - - - - - - - - - - - - - - - - - -
-
     if (currIter + diff < ceiling){
         sumUp(ceiling, diff, currIter, sum);
-     }
-
-// - - - - - - - - - - - - - - - - - - - - - - - -
+    }
 
     else {
 
